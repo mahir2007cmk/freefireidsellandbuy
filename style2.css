@@ -1,0 +1,135 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Login Box Styling */
+.login-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Google Logo Styling */
+.google-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #202124;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+/* Input Group Styling */
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f8f9fa;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #1a73e8;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #80868b;
+    transition: top 0.2s, font-size 0.2s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #1a73e8;
+}
+
+/* Links */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Forgot Email/Password Links */
+.forgot-email, .forgot-password {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Login Button */
+.login-btn {
+    width: 50%;
+    background-color: #afb2b5;
+    color: white;
+    border: 2px;;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #b6b9bc;
+}
+
+/* Create Account Section */
+.create-account {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.create-account a {
+    font-weight: bold;
+}
